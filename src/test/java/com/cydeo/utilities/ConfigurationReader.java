@@ -6,12 +6,13 @@ import java.util.Properties;
 
 public class ConfigurationReader {
     //1-create the properties object
-    //"static is to make sure its created and loaded before everything else"
+    //"static is to make sure its
+    // created and loaded before everything else"
     private static Properties properties=new Properties();
     static {
 
         try {//2-open file using FileInputStream
-            FileInputStream file=new FileInputStream("src/Configuration.properties");
+            FileInputStream file = new FileInputStream("src/Configuration.properties");
             //3-Load the "properties" object with "file" (load properties)
             properties.load(file);
             //close the file
